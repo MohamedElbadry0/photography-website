@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Photography Portfolio</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Boldonse&family=Knewave&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    
+
+    <script defer src="/static/scripts.js"></script>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header class="header">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <div class="logo">
+            <a href="#"><img src="/static/pics/logo.png" alt="Logo" class="logo-img"></a>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#gear">My Gear</a></li>
+                <li><a href="#portfolio">My portfolio</a></li>
+
+
+            </ul>
+            <!-- Basket Icon -->
+    
+    <div class="basket">
+        <a href="#">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="item-count">3</span> <!-- Number of items in basket -->
+        </a>
+    </div>
+        </nav>
+        <div class="hamburger" id="hamburger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+
+        </div>
+    </header>
+
+    <!-- Main Content Sections -->
+
+    <!-- Full-Screen Header Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1> EL badry Photography</h1>
+            <p class="tagline">Capturing Life's Most Beautiful Moments</p>
+            <a href="#gallery" class="cta">Explore My Work</a>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <h1 class="section-title">Gallery</h1>
+        
+       <!-- Photo Banners Section -->
+<section class="photo-banners">
+    <!-- Banner 1 -->
+    <div class="banner" id="banner1">
+        <div class="banner-content">
+            <h2>Majestic Italy</h2>
+            <p>High-quality print of the lake como at sunrise.</p>
+            <span class="price">£49.99</span>
+            <button class="add-to-basket" data-id="print1" data-price="50">Add to Basket</button> <!-- Button to Add to Basket -->
+        </div>
+    </div>
+
+    <!-- Banner 2 -->
+    <div class="banner" id="banner2">
+        <div class="banner-content">
+            <h2>Audi lover</h2>
+            <p>Limited edition Audi R8 photography.</p>
+            <span class="price">£39.99</span>
+            <button class="add-to-basket" data-id="print1" data-price="50">Add to Basket</button> <!-- Button to Add to Basket -->
+        </div>
+    </div>
+
+    <!-- Banner 3 -->
+    <div class="banner" id="banner3" >
+        <div class="banner-content">
+            <h2>City Lights</h2>
+            <p>Vibrant cityscape print with stunning lights of NYC.</p>
+            <span class="price">£29.99</span>
+            <button class="add-to-basket" data-id="print1" data-price="50">Add to Basket</button> <!-- Button to Add to Basket -->
+        </div>
+    </div>
+        <!-- Banner 4 -->
+        <div class="banner" id="banner4">
+            <div class="banner-content">
+                <h2>Majestic Mountains</h2>
+                <p>High-quality print of the Alps at sunrise.</p>
+                <span class="price">£49.99</span>
+                <button class="add-to-basket" data-id="print1" data-price="50">Add to Basket</button> <!-- Button to Add to Basket -->
+            </div>
+        </div>
+    
+        <!-- Banner 5 -->
+        <div class="banner" id="banner5">
+            <div class="banner-content">
+                <h2>Golden Sunset</h2>
+                <p>Limited edition beach sunset photography of Spain.</p>
+                <span class="price">£39.99</span>
+                <button class="add-to-basket" data-id="print1" data-price="50">Add to Basket</button> <!-- Button to Add to Basket -->
+            </div>
+        </div>
+    
+        <!-- Banner 6 -->
+        <div class="banner" id="banner6">
+            <div class="banner-content">
+                <p>LIMITED EDITION-Vibrant ladnscape print with stunning Alaskan mountains.</p>
+                <span class="price">£79.99</span>
+                <button class="add-to-basket" data-id="print1" data-price="50">Add to Basket</button> <!-- Button to Add to Basket -->
+            </div>
+        </div>
+</section>
+
+
+
+    </section>
+
+    <!-- About Section -->
+<section id="about" class="about">
+    <div class="about-content">
+        <div class="about-text">
+            <h2 class="section-title">About Me</h2>
+            <p class="typing-effect">I’m a passionate photographer who loves capturing emotions, moments, and stories through my lens. I aim to tell visual tales that stir emotions and capture the essence of life.</p>
+            <p>Through my photography, I seek to freeze moments in time and present them with a unique perspective. Whether it's the warmth of a sunset or the candid smile of a person, my goal is to capture the story behind every frame.</p>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/itselbadry/" class="icon"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <div class="about-image">
+            <img src="/static/pics/profile.jpg" alt="Photographer Image">
+        </div>
+    </div>
+    <!-- Pricing List Download -->
+    <div class="pricing-download">
+        <a href="/static/files/pricing-list.pdf" class="icon pdf-icon" download>
+            <i class="fas fa-file-pdf"></i>
+            <span class="download-text">Download Pricing List</span>
+        </a>
+    </div>   
+</section>
+
+<!-- My Gear Section -->
+<section id="gear" class="gear">
+    <div class="gear-header">
+        <h2 class="section-title gear-title">My Gear</h2>
+    </div>
+
+    <div class="gear-list">
+        <div class="gear-item">
+            <div class="gear-banner">
+                <img src="/static/pics/canon-m50.jpg" alt="Canon M50" class="gear-img">
+            </div>
+            <div class="gear-description">
+                <h3 class="gear-name">Canon M50</h3>
+                <p class="gear-info">The Canon M50 is my go-to mirrorless camera for capturing high-quality images and videos. It’s compact yet powerful, with amazing autofocus and 4K video capabilities. Ideal for both photography and videography on the go!</p>
+            </div>
+        </div>
+
+        <div class="gear-item">
+            <div class="gear-banner">
+                <img src="/static/pics/tamron15-30.jpg" alt="Tamron 15-30mm f/2.8" class="gear-img">
+            </div>
+            <div class="gear-description">
+                <h3 class="gear-name">Tamron 15-30mm f/2.8 G2</h3>
+                <p class="gear-info">The Tamron 15-30mm f/2.8 G2 lens is a wide-angle zoom lens that offers incredible sharpness, even in low light conditions. It's perfect for capturing stunning landscapes and interiors with exceptional clarity.</p>
+            </div>
+        </div>
+
+        <div class="gear-item">
+            <div class="gear-banner">
+                <img src="/static/pics/canon-50mm.jpg" alt="Canon 50mm f/1.8" class="gear-img">
+            </div>
+            <div class="gear-description">
+                <h3 class="gear-name">Canon 50mm f/1.8</h3>
+                <p class="gear-info">The Canon 50mm f/1.8 is my favorite prime lens for portrait photography. With its fast aperture, I capture beautifully blurred backgrounds and sharp, crisp details on my subjects. A must-have for any photographer!</p>
+            </div>
+        </div>
+
+        <div class="gear-item">
+            <div class="gear-banner">
+                <img src="/static/pics/kf-tripod.jpg" alt="KF Concept Tripod" class="gear-img">
+            </div>
+            <div class="gear-description">
+                <h3 class="gear-name">KF Concept Tripod</h3>
+                <p class="gear-info">The KF Concept Tripod is lightweight, sturdy, and super versatile. I use it for long-exposure shots, low-angle photography, and steady videography. It’s a must-have for anyone serious about their photography.</p>
+            </div>
+        </div>
+        <div class="gear-item">
+            <div class="gear-banner">
+                <img src="/static/pics/mic.jpg" alt="COMICA Vimo C3 " class="gear-img">
+            </div>
+            <div class="gear-description">
+                <h3 class="gear-name">COMICA Vimo C3 </h3>
+                <p class="gear-info">The Comica Vimo C3 wireless lavalier microphone system features a cutting-edge DSP noise cancellation chip, which can effectively eliminate noise in the environment; 48Khz/24bit high sampling rate super CD sound quality, the sound quality is purer and better.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- Skills Section -->
+<section id="skills" class="skills-section">
+    <h2 class="skills-title">My Skill Set</h2>
+    <div class="skills-container">
+        <div class="skill-card">
+            <i class="fas fa-city"></i>
+            <h3>Urban Photography</h3>
+            <p>Capturing the essence of city life with a creative edge.</p>
+        </div>
+        <div class="skill-card">
+            <i class="fas fa-moon"></i>
+            <h3>Night Photography</h3>
+            <p>Mastering light and shadows for stunning night shots.</p>
+        </div>
+        <div class="skill-card">
+            <i class="fas fa-video"></i>
+            <h3>Videography</h3>
+            <p>Creating cinematic stories with professional techniques.</p>
+        </div>
+        <div class="skill-card">
+            <i class="fas fa-film"></i>
+            <h3>Film Production</h3>
+            <p>Crafting compelling visuals with storytelling expertise.</p>
+        </div>
+        <div class="skill-card">
+            <i class="fas fa-edit"></i>
+            <h3>Adobe Premiere Pro</h3>
+            <p>Editing high-quality videos with precision and creativity.</p>
+        </div>
+        <div class="skill-card">
+            <i class="fas fa-paint-brush"></i>
+            <h3>Adobe Lightroom</h3>
+            <p>Enhancing images with powerful color grading tools.</p>
+        </div>
+        <div class="skill-card">
+            <i class="fas fa-clapperboard"></i>
+            <h3>DaVinci Resolve</h3>
+            <p>Advanced color correction and editing for professional results.</p>
+        </div>
+        <div class="skill-card">
+            <i class="fas fa-camera-retro"></i>
+            <h3>Photoshop</h3>
+            <p>Mastering image manipulation and creative compositions.</p>
+        </div>
+        <div class="skill-card">
+            <i class="fas fa-vector-square"></i>
+            <h3>Illustrator</h3>
+            <p>Creating vector art and professional graphic designs.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Portfolio Section -->
+<section id="portfolio" class="portfolio">
+    <h2 class="section-title">Here Are My Best Pictures</h2>
+    <div class="portfolio-grid">
+        <div class="portfolio-item">
+            <img src="/static/pics/pic1.jpg" alt="Portfolio Image 1">
+        </div>
+        <div class="portfolio-item">
+            <img src="/static/pics/pic2.jpg" alt="Portfolio Image 2">
+        </div>
+        <div class="portfolio-item">
+            <img src="/static/pics/pic3.jpg" alt="Portfolio Image 3">
+        </div>
+        <div class="portfolio-item">
+            <img src="/static/pics/pic4.jpg" alt="Portfolio Image 4">
+        </div>
+        <div class="portfolio-item">
+            <img src="/static/pics/pic5.jpg" alt="Portfolio Image 5">
+        </div>
+        <div class="portfolio-item">
+            <img src="/static/pics/pic6.jpg" alt="Portfolio Image 6">
+        </div>
+        <div class="portfolio-item">
+            <img src="/static/pics/pic7.jpg" alt="Portfolio Image 7">
+        </div>
+        <div class="portfolio-item">
+            <img src="/static/pics/pic8.jpg" alt="Portfolio Image 8">
+        </div>
+        <div class="portfolio-item">
+            <img src="/static/pics/pic9.jpg" alt="Portfolio Image 9">
+        </div>
+    </div>
+</section>
+
+<!-- Services Section -->
+<section id="services" class="services">
+    <h2 class="section-title">My Photography Services</h2>
+    <div class="services-grid">
+        <div class="service-item">
+            <div class="service-icon">
+                <img src="/static/pics/urban_photography.jpg" alt="Urban Photography">
+            </div>
+            <h3>Urban Photography</h3>
+            <p>Capture the essence of urban life in Edinburgh and beyond, focusing on architectural beauty and street culture.</p>
+        </div>
+        <div class="service-item">
+            <div class="service-icon">
+                <img src="/static/pics/night_photography.jpg" alt="Night Photography">
+            </div>
+            <h3>Night Photography</h3>
+            <p>Specializing in capturing the city lights and beautiful nightscapes of Edinburgh, providing stunning long-exposure shots.</p>
+        </div>
+        <div class="service-item">
+            <div class="service-icon">
+                <img src="/static/pics/food.jpg" alt="food">
+            </div>
+            <h3>Food photography</h3>
+            <p>Professional food photography creation for restaurant, promotional content, and cinematic storytelling to showcase your business.</p>
+        </div>
+        <div class="service-item">
+            <div class="service-icon">
+                <img src="/static/pics/event_photography.jpg" alt="Event Photography">
+            </div>
+            <h3>Event Photography</h3>
+            <p>Capturing memories at weddings, parties, and other events, offering high-quality imagery for every occasion.</p>
+        </div>
+        <div class="service-item">
+            <div class="service-icon">
+                <img src="/static/pics/pic11.jpg" alt="Photo Editing & Retouching">
+            </div>
+            <h3>Photo Editing & Retouching</h3>
+            <p>Offering advanced editing and retouching services to enhance the final look of your photographs with industry-leading tools.</p>
+        </div>
+        <div class="service-item">
+            <div class="service-icon">
+                <img src="/static/pics/pic10.jpg" alt="Portrait Photography">
+            </div>
+            <h3>Portrait Photography</h3>
+            <p>Specializing in individual, couple, and family portraits that capture the true essence of personality and style.</p>
+        </div>
+    </div>
+</section>
+
+
+<!-- Contact Section -->
+<section id="contact" class="contact-section">
+    <h2 class="section-title">Book a Session</h2>
+    <p class="contact-subtitle">Let’s create something amazing together! Fill out the form below to get started.</p>
+
+    <form id="contact-form" class="contact-form">
+        <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required placeholder="Enter your full name">
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required placeholder="Enter your email">
+        </div>
+
+        <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" required placeholder="+44 1234 567890">
+        </div>
+
+        <div class="form-group">
+            <label for="booking-date">Preferred Booking Date</label>
+            <input type="date" id="booking-date" name="booking-date" required>
+        </div>
+
+        <div class="form-group">
+            <label for="city">Which City Are You From?</label>
+            <select id="city" name="city" required>
+                <option value="" disabled selected>Select your city</option>
+                <option value="London">London</option>
+                <option value="Edinburgh">Edinburgh</option>
+                <option value="Glasgow">Glasgow</option>
+                <option value="Manchester">Manchester</option>
+                <option value="Birmingham">Birmingham</option>
+                <option value="Liverpool">Liverpool</option>
+                <option value="Other">Other</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="budget">Expected Budget (£) <span id="budget-value">500</span></label>
+            <input type="range" id="budget" name="budget" min="100" max="5000" value="500" step="50">
+        </div>
+
+        <div class="form-group">
+            <label for="referral">How Did You Hear About Me?</label>
+            <select id="referral" name="referral">
+                <option value="Instagram">Instagram</option>
+                <option value="Facebook">Facebook</option>
+                <option value="Google">Google Search</option>
+                <option value="Word of Mouth">Word of Mouth</option>
+                <option value="Other">Other</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="message">Tell Me More About Your Project</label>
+            <textarea id="message" name="message" rows="5" required placeholder="Describe your photography needs..."></textarea>
+        </div>
+
+        <button type="submit" class="submit-btn">Send Inquiry</button>
+        <p class="form-success">✅ Your message has been sent successfully!</p>
+    </form>
+</section>
+
+
+
+   <!-- Footer Section -->
+<footer class="footer">
+    <div class="newsletter">
+        <h3>Subscribe to My Newsletter</h3>
+        <p>Stay updated with my latest photography projects & exclusive offers!</p>
+        <form id="newsletter-form">
+            <input type="email" id="newsletter-email" placeholder="Enter your email" required>
+            <button type="submit" class="subscribe-btn">Subscribe</button>
+        </form>
+        <p class="success-message">✅ Thank you for subscribing!</p>
+    </div>
+    <p>&copy; 2025 Elbadry Photography. All Rights Reserved.</p>
+</footer>
+>
+</body>
+</html>
