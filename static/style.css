@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
 
+/* Global Styles for All Elements */
 * {
     margin: 0;
     padding: 0;
@@ -7,16 +8,16 @@
 }
 
 body {
-    font-family: 'Arial', sans-serif; 
-    background-color: #f4f4f4; 
-    color: #333; 
-    overflow-x: hidden; 
+    font-family: 'Arial', sans-serif; /* Default Font */
+    background-color: #f4f4f4; /* Light Background Color */
+    color: #333; /* Text Color */
+    overflow-x: hidden; /* Prevent Horizontal Scrolling */
 }
 
 h1, h2 {
     font-weight: 700;
     letter-spacing: 1px;
-    color: #ffffff; 
+    color: #ffffff; /* White Color for Headers */
 }
 
 /* Navigation Bar Styles */
@@ -24,18 +25,18 @@ h1, h2 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: absolute; 
+    position: absolute; /* Positioned over the hero section */
     top: 0;
     left: 0;
     right: 0;
     color: white;
     padding: 20px 30px;
-    z-index: 1000; 
+    z-index: 1000; /* Ensure the navbar is on top of the background */
 }
 
 .header .logo-img {
-    width: 150px; 
-    height: auto; 
+    width: 150px; /* Set a fixed width for the logo */
+    height: auto; /* Auto-adjust height based on width */
 }
 /* Navigation Bar Links */
 .navbar ul {
@@ -44,19 +45,19 @@ h1, h2 {
 }
 
 .navbar ul li {
-    margin: 0 50px; 
+    margin: 0 50px; /* Space between Links */
 }
 
 .navbar ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
-    text-transform: uppercase; 
-    transition: color 0.3s; 
+    text-transform: uppercase; /* Uppercase for Links */
+    transition: color 0.3s; /* Smooth Hover Transition */
 }
 
 .navbar ul li a:hover {
-    color: #f4b400; 
+    color: #f4b400; /* Yellow Hover Effect */
 }
 
 /* Header Container */
@@ -64,13 +65,13 @@ h1, h2 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: absolute; 
+    position: absolute; /* Positioned over the hero section */
     top: 0;
     left: 0;
     right: 0;
     color: white;
     padding: 20px 30px;
-    z-index: 1000; 
+    z-index: 1000; /* Ensure the navbar is on top of the background */
 }
 
 /* Logo Styling */
@@ -100,8 +101,11 @@ h1, h2 {
 }
 
 .navbar ul li a:hover {
-    color: #f4b400; 
+    color: #f4b400; /* Yellow Hover Effect */
 }
+
+/* Basket Icon Styling */
+
 
 /* Item Count Badge */
 .basket .item-count {
@@ -132,36 +136,36 @@ h1, h2 {
 
 /* Hero Section Styles */
 .hero {
-    height: 100vh; 
+    height: 100vh; /* Fullscreen Height */
     background-image: url('/static/pics/background.jpg');
     background-position: center;
-    background-size: cover; 
+    background-size: cover; /* Cover the Entire Hero Section */
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     color: white;
-    position: relative; 
+    position: relative; /* Position relative to ensure navbar is above it */
     transition: opacity 0.3s ease-out, background-color 0.5s ease-out;
 
 }
 
 .hero-content {
-    z-index: 2; 
+    z-index: 2; /* Ensure Content is Above Background */
 }
 
 .hero h1 {
-    font-family: 'Dancing Script', cursive; 
+    font-family: 'Dancing Script', cursive; /* Apply cursive font */
     font-size: 3rem;
     text-transform: uppercase;
-    font-weight: 700; 
-    letter-spacing: 5px; 
+    font-weight: 700; /* Bold weight for the cursive font */
+    letter-spacing: 5px; /* Slight spacing to make it more readable */
     font-family: "Boldonse", system-ui;
     font-weight: 600;
     font-style: normal;
 }
 
-/* tagline*/
+/* You can also add styles to make sure the tagline is a bit more elegant if needed */
 .tagline {
     font-size: 1rem;
     margin: 20px 0;
@@ -171,75 +175,85 @@ h1, h2 {
   }
   
   
+   /* Optional: If you want the tagline in the same cursive font */
 
+/* Call to Action Button Styles */
 .cta {
     display: inline-block;
     padding: 10px 25px;
-    background-image: url('/static/pics/background.jpg'); 
+    background-image: url('/static/pics/background.jpg'); /* Set Background Image */
+    background-size: cover;
     background-position: center;
     color: #fff;
     text-decoration: none;
     text-transform: uppercase;
     font-weight: bold;
     border-radius: 25px;
-    transition: background-color 0.3s, transform 0.3s; 
+    transition: background-color 0.3s, transform 0.3s; /* Hover Effects */
     position: relative;
 }
 
 .cta:hover {
-    background-color: rgba(0, 0, 0, 0.5); 
+    background-color: rgba(0, 0, 0, 0.5); /* Darken on Hover */
     color: #fff;
-    transform: scale(1.1); 
+    transform: scale(1.1); /* Slight Zoom Effect */
 }
 
 .cta::before {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); 
+    transform: translate(-50%, -50%); /* Center Text */
     font-size: 1.2rem;
     font-weight: bold;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); 
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Text Shadow */
     z-index: 1;
 }
 
 .cta:hover::before {
-    color: #fff; 
+    color: #fff; /* Change Text Color on Hover */
 }
 
 /* Gallery Section Styles */
 .gallery {
-    background-image: url('/static/pics/background2.jpg');
+    background-image: url('/static/pics/background2.jpg'); /* Set Background Image */
     background-size: cover;
     background-position: center;
     padding: 50px 50px;
     text-align: center;
 }
 .gallery h1 {
-    font-family: 'Dancing Script', cursive;
+    font-family: 'Dancing Script', cursive; /* Apply cursive font */
     font-size: 3rem;
     text-transform: uppercase;
-    font-weight: 700;
-    letter-spacing: 5px;
+    font-weight: 700; /* Bold weight for the cursive font */
+    letter-spacing: 5px; /* Slight spacing for readability */
     font-family: "Boldonse", system-ui;
     font-weight: 600;
     font-style: normal;
-    color: rgb(0, 0, 0);
-    transition: color 0.3s ease-in-out;
+    color: rgb(0, 0, 0); /* Default text color */
+    transition: color 0.3s ease-in-out; /* Smooth color transition */
 }
+
+/* Change to orange when hovered */
 .gallery h1:hover {
     color: orange;
 }
+/* Add spacing between the two gallery sections */
 .gallery-grid:first-of-type {
-    margin-bottom: 100px;
+    margin-bottom: 100px; /* Space between the first 4 images and the next 4 */
 }
+
+/* Gallery grid setup */
 .gallery-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 100px;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive Grid */
+    gap: 100px; /* More spacing between images */
     justify-content: center;
     align-items: center;
 }
+
+/* Styling for gallery items */
 .gallery-item {
     position: relative;
     overflow: hidden;
@@ -247,25 +261,28 @@ h1, h2 {
     transition: transform 0.3s ease-out;
 }
 
+
 /* Section Styling */
 .photo-banners {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 40px;
+    gap: 40px; /* Space between banners */
     padding: 50px 20px;
 }
 
 /* Banner Styling */
 .banner {
-    width: 80%;
-    height: 300px;
+    width: 80%; /* Not edge-to-edge */
+    height: 300px; /* One-third of a page */
     border-radius: 15px;
     position: relative;
     overflow: hidden;
     cursor: pointer;
     transition: transform 0.3s ease-in-out;
 }
+
+/* Different Backgrounds for Each Banner */
 .banner:nth-child(1) {
     background: url('/static/pics/print1.jpg') center/cover no-repeat;
 }
@@ -284,8 +301,10 @@ h1, h2 {
 .banner:nth-child(6) {
     background: url('/static/pics/print6.jpg') center/cover no-repeat;
 }
+
+/* Hover Effect - Slight Zoom */
 .banner:hover {
-    transform: scale(1.05);
+    transform: scale(1.05); /* Slight zoom effect */
 }
 
 /* Shake Animation */
@@ -296,6 +315,7 @@ h1, h2 {
     75% { transform: translateX(-10px); }
     100% { transform: translateX(0); }
 }
+
 .banner.shake {
     animation: shake 0.5s ease-in-out;
 }
@@ -308,27 +328,32 @@ h1, h2 {
     color: white;
     text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
 }
+
+/* Apply Dancing Script Font */
 .banner-content h2 {
-    font-family: 'Bebas Neue', sans-serif;
-    font-weight: 2000;
-    font-style: normal;
-    font-size: 8rem;
-    letter-spacing: 6px;
-    margin-bottom: 10px;
+        font-family: 'Bebas Neue', sans-serif; /* Apply Bebas Neue font */
+        font-weight: 2000; /* Normal font weight (you can set this to 700 for a bolder version) */
+        font-style: normal; /* Ensure the font is displayed normally */
+        font-size: 8rem;
+
+    letter-spacing: 6px; /* Slight spacing for readability */
+    margin-bottom: 10px; /* Space between heading and paragraph */
 }
+
 .banner-content p {
-    font-family: 'Bebas Neue', sans-serif;
-    font-weight: 800;
-    font-style: normal;
-    font-size: 2rem;
-    letter-spacing: 6px;
+        font-family: 'Bebas Neue', sans-serif; /* Apply Bebas Neue font */
+        font-weight: 800; /* Normal font weight (you can set this to 700 for a bolder version) */
+        font-style: normal; /* Ensure the font is displayed normally */
+        font-size: 2rem;
+        letter-spacing: 6px;
+
     opacity: 0.9;
     transition: opacity 0.3s ease, transform 0.3s ease;
-    margin-bottom: 15px;
+    margin-bottom: 15px; /* Space below paragraph */
 }
 .banner:hover .banner-content p {
-    opacity: 1;
-    transform: translateY(-5px);
+    opacity: 1; /* Fully visible when hovering over the banner */
+    transform: translateY(-5px); /* Slightly move the text up on hover */
 }
 
 /* Price Tag */
@@ -339,12 +364,11 @@ h1, h2 {
     padding: 5px 10px;
     border-radius: 5px;
 }
-
 .basket {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    z-index: 1000;
+    position: fixed; /* Keeps the basket icon fixed in the top right corner */
+    top: 20px; /* Adjust vertical position */
+    right: 20px; /* Adjust horizontal position */
+    z-index: 1000; /* Ensure the basket icon is on top of other elements */
 }
 
 .basket a {
@@ -356,11 +380,11 @@ h1, h2 {
 }
 
 .basket a:hover {
-    color: #f4b400;
+    color: #f4b400; /* Yellow Hover Effect */
 }
 
 .basket i {
-    margin-right: 8px;
+    margin-right: 8px; /* Space between Icon and Item Count */
 }
 
 .add-to-basket {
@@ -377,40 +401,39 @@ h1, h2 {
 }
 
 .add-to-basket:hover {
-    background-color: #e39f00;
+    background-color: #e39f00; /* Darken the button on hover */
 }
 
-/* Responsive */
+/* Responsive - Adjust for Smaller Screens */
 @media (max-width: 768px) {
     .banner {
-        width: 95%;
+        width: 95%; /* Make banners a bit wider on small screens */
     }
 }
 
-/* Gallery Animation */
+/* Add staggered delay effect */
 .gallery-item:nth-child(1) { animation-delay: 0.2s; }
 .gallery-item:nth-child(2) { animation-delay: 0.4s; }
 .gallery-item:nth-child(3) { animation-delay: 0.6s; }
 .gallery-item:nth-child(4) { animation-delay: 0.8s; }
 .gallery-item:nth-child(5) { animation-delay: 1s; }
-
-/* About Section */
+/* About Section Styles */
 .about {
     background-color: #413f3f;
     color: rgb(255, 255, 255);
     padding: 50px 20px;
     text-align: center;
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+    opacity: 0; /* Make it invisible initially */
+    transform: translateY(20px); /* Move it slightly down */
+    transition: opacity 0.3s ease-out, transform 0.3s ease-out; /* Animation on scroll */
 }
 
 .about.visible {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateY(0); /* Reset position */
 }
 
-/* About Content */
+/* Container for Text and Image */
 .about-content {
     display: flex;
     justify-content: space-between;
@@ -426,15 +449,15 @@ h1, h2 {
 .about-text {
     max-width: 600px;
     text-align: left;
-    opacity: 0;
-    transform: translateX(-50px);
+    opacity: 0; 
+    transform: translateX(-50px); 
     animation: slideInLeft 1s ease-out forwards;
 }
 
 .about-text h2 {
     font-size: 3rem;
     font-family: 'Bebas Neue', sans-serif;
-    color: #f4b400;
+    color: #f4b400; 
     letter-spacing: 2px;
     margin-bottom: 20px;
     text-transform: uppercase;
@@ -445,15 +468,14 @@ h1, h2 {
     font-size: 1.2rem;
     line-height: 1.8;
     margin-bottom: 20px;
-    opacity: 0;
+    opacity: 0; 
     animation: fadeIn 2s 1s forwards;
 }
 
-/* About Image */
 .about-image {
     width: 30%;
     opacity: 0;
-    transform: translateX(50px);
+    transform: translateX(50px); 
     animation: slideInRight 1s ease-out forwards;
 }
 
@@ -469,13 +491,13 @@ h1, h2 {
     transform: scale(2);
 }
 
-/* Typing Effect */
+/* Typing Animation */
 .typing-effect {
     font-size: 1.4rem;
     font-family: 'Courier New', Courier, monospace;
     white-space: nowrap;
     overflow: hidden;
-    border-right: 4px solid #f4b400;
+    border-right: 4px solid #f4b400; /* Cursor effect */
     animation: typing 4s steps(40) 1s forwards, blink 0.75s step-end infinite;
 }
 
@@ -532,7 +554,7 @@ h1, h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 25px; 
+    gap: 25px; /* Space between icons */
 }
 
 /* General Icon Styling */
@@ -544,7 +566,7 @@ h1, h2 {
 
 .social-icons .icon:hover {
     transform: scale(1.2);
-    color: #f4b400; 
+    color: #f4b400; /* Orange hover effect */
 }
 
 /* PDF Icon Styling */
@@ -553,7 +575,7 @@ h1, h2 {
     align-items: center;
     gap: 10px;
     text-decoration: none;
-    background-color: #222; 
+    background-color: #222; /* Dark button style */
     padding: 10px 15px;
     border-radius: 8px;
     transition: background 0.3s ease, transform 0.3s ease;
@@ -567,22 +589,22 @@ h1, h2 {
 
 .pdf-icon .download-text {
     font-size: 1rem;
-    font-family: 'Bebas Neue', sans-serif; 
+    font-family: 'Bebas Neue', sans-serif; /* Apply Bebas Neue font */
     font-weight: bold;
     color: white;
     transition: color 0.3s ease;
-    font-family: "Poppins", sans-serif; 
+    font-family: "Poppins", sans-serif; /* Nice modern font */
 }
 
 /* Hover Effect */
 .pdf-icon:hover {
-    background-color: #f4b400; 
+    background-color: #f4b400; /* Orange background */
     transform: scale(1.02);
 }
 
 .pdf-icon:hover i,
 .pdf-icon:hover .download-text {
-    color: black; 
+    color: black; /* Text & icon turn black on hover */
 }
 
 /* Responsive Styles */
@@ -1044,7 +1066,7 @@ h1, h2 {
 /* Footer section */
 .footer {
     background: #121212;
-    color: rgb(117, 114, 114);
+    color: rgb(0, 0, 0);
     text-align: center;
     padding: 30px;
     font-size: 1rem;
