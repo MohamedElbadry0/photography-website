@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
 
-/* Global Styles for All Elements */
 * {
     margin: 0;
     padding: 0;
@@ -8,16 +7,16 @@
 }
 
 body {
-    font-family: 'Arial', sans-serif; /* Default Font */
-    background-color: #f4f4f4; /* Light Background Color */
-    color: #333; /* Text Color */
-    overflow-x: hidden; /* Prevent Horizontal Scrolling */
+    font-family: 'Arial', sans-serif; 
+    background-color: #f4f4f4; 
+    color: #333; 
+    overflow-x: hidden; 
 }
 
 h1, h2 {
     font-weight: 700;
     letter-spacing: 1px;
-    color: #ffffff; /* White Color for Headers */
+    color: #ffffff; 
 }
 
 /* Navigation Bar Styles */
@@ -25,18 +24,18 @@ h1, h2 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: absolute; /* Positioned over the hero section */
+    position: absolute; 
     top: 0;
     left: 0;
     right: 0;
     color: white;
     padding: 20px 30px;
-    z-index: 1000; /* Ensure the navbar is on top of the background */
+    z-index: 1000; 
 }
 
 .header .logo-img {
-    width: 150px; /* Set a fixed width for the logo */
-    height: auto; /* Auto-adjust height based on width */
+    width: 150px; 
+    height: auto; 
 }
 /* Navigation Bar Links */
 .navbar ul {
@@ -45,19 +44,19 @@ h1, h2 {
 }
 
 .navbar ul li {
-    margin: 0 50px; /* Space between Links */
+    margin: 0 50px; 
 }
 
 .navbar ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
-    text-transform: uppercase; /* Uppercase for Links */
-    transition: color 0.3s; /* Smooth Hover Transition */
+    text-transform: uppercase; 
+    transition: color 0.3s; 
 }
 
 .navbar ul li a:hover {
-    color: #f4b400; /* Yellow Hover Effect */
+    color: #f4b400; 
 }
 
 /* Header Container */
@@ -65,13 +64,13 @@ h1, h2 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: absolute; /* Positioned over the hero section */
+    position: absolute; 
     top: 0;
     left: 0;
     right: 0;
     color: white;
     padding: 20px 30px;
-    z-index: 1000; /* Ensure the navbar is on top of the background */
+    z-index: 1000; 
 }
 
 /* Logo Styling */
@@ -101,11 +100,8 @@ h1, h2 {
 }
 
 .navbar ul li a:hover {
-    color: #f4b400; /* Yellow Hover Effect */
+    color: #f4b400; 
 }
-
-/* Basket Icon Styling */
-
 
 /* Item Count Badge */
 .basket .item-count {
@@ -136,36 +132,36 @@ h1, h2 {
 
 /* Hero Section Styles */
 .hero {
-    height: 100vh; /* Fullscreen Height */
+    height: 100vh; 
     background-image: url('/static/pics/background.jpg');
     background-position: center;
-    background-size: cover; /* Cover the Entire Hero Section */
+    background-size: cover; 
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     color: white;
-    position: relative; /* Position relative to ensure navbar is above it */
+    position: relative; 
     transition: opacity 0.3s ease-out, background-color 0.5s ease-out;
 
 }
 
 .hero-content {
-    z-index: 2; /* Ensure Content is Above Background */
+    z-index: 2; 
 }
 
 .hero h1 {
-    font-family: 'Dancing Script', cursive; /* Apply cursive font */
+    font-family: 'Dancing Script', cursive; 
     font-size: 3rem;
     text-transform: uppercase;
-    font-weight: 700; /* Bold weight for the cursive font */
-    letter-spacing: 5px; /* Slight spacing to make it more readable */
+    font-weight: 700; 
+    letter-spacing: 5px; 
     font-family: "Boldonse", system-ui;
     font-weight: 600;
     font-style: normal;
 }
 
-/* You can also add styles to make sure the tagline is a bit more elegant if needed */
+/* tagline*/
 .tagline {
     font-size: 1rem;
     margin: 20px 0;
@@ -175,28 +171,25 @@ h1, h2 {
   }
   
   
-   /* Optional: If you want the tagline in the same cursive font */
 
-/* Call to Action Button Styles */
 .cta {
     display: inline-block;
     padding: 10px 25px;
-    background-image: url('/static/pics/background.jpg'); /* Set Background Image */
-    background-size: cover;
+    background-image: url('/static/pics/background.jpg'); 
     background-position: center;
     color: #fff;
     text-decoration: none;
     text-transform: uppercase;
     font-weight: bold;
     border-radius: 25px;
-    transition: background-color 0.3s, transform 0.3s; /* Hover Effects */
+    transition: background-color 0.3s, transform 0.3s; 
     position: relative;
 }
 
 .cta:hover {
-    background-color: rgba(0, 0, 0, 0.5); /* Darken on Hover */
+    background-color: rgba(0, 0, 0, 0.5); 
     color: #fff;
-    transform: scale(1.1); /* Slight Zoom Effect */
+    transform: scale(1.1); 
 }
 
 .cta::before {
@@ -1066,9 +1059,9 @@ h1, h2 {
 /* Footer section */
 .footer {
     background: #121212;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     text-align: center;
-    padding: 30px;
+    padding: 20px;
     font-size: 1rem;
     margin-top: 50px;
 }
@@ -1186,4 +1179,4 @@ h1, h2 {
     .navbar.active {
         display: flex;
     }
-}
+} 
