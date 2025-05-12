@@ -96,7 +96,10 @@ h1, h2 {
     text-decoration: none;
     font-weight: bold;
     text-transform: uppercase;
+    font-size: 1.2rem; /* Adjust this as needed */
     transition: color 0.3s;
+
+
 }
 
 .navbar ul li a:hover {
@@ -147,6 +150,11 @@ h1, h2 {
   letter-spacing: 5px;
   font-family: "Boldonse", system-ui;
   font-style: normal;
+      text-shadow: 
+        -1px -1px 0 #f4b400,
+         1px -1px 0 #f4b400,
+        -1px  1px 0 #f4b400,
+         1px  1px 0 #f4b400;
 }
 
 /* Tagline */
@@ -155,27 +163,38 @@ h1, h2 {
   margin: 20px 0;
   font-family: "Boldonse", system-ui;
   font-weight: 400;
+    text-transform: uppercase;
+
   font-style: normal;
+      text-shadow: 
+        -1px -1px 0 #f4b400,
+         1px -1px 0 #f4b400,
+        -1px  1px 0 #f4b400,
+         1px  1px 0 #f4b400;
+           color: #ffffff;
+
 }
 
+/* Call-to-Action Button */
 /* Call-to-Action Button */
 .cta {
   display: inline-block;
   padding: 10px 25px;
-  background-image: url('/static/pics/background.jpg');
+  background-color: #f4b400; 
   background-position: center;
   color: #fff;
   text-decoration: none;
   text-transform: uppercase;
   font-weight: bold;
+  font-family: "Boldonse", system-ui;
   border-radius: 25px;
   transition: background-color 0.3s, transform 0.3s;
   position: relative;
+
 }
 
 .cta:hover {
-  background-color: rgba(0, 0, 0, 0.5);
-  color: #fff;
+  background-color: #e39f00; /* Darker yellow on hover */
   transform: scale(1.1);
 }
 
